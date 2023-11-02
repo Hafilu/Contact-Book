@@ -1,0 +1,25 @@
+{
+  "contacts": [
+    {
+      "name": "Hafilue C",
+      "email": "hafli.c@gmail.com",
+      "phone": "6789191443",
+      "id": 1698926523712,
+      "fav": true
+    },
+    {
+      "name": "Hafil",
+      "email": "hafl@gmail.com",
+      "phone": "8798014433",
+      "id": 1698926575113,
+      "fav": true
+    },
+    {
+      "name": "Hafilue C",
+      "email": "hafliue.c@gmail.com",
+      "phone": "9987914433",
+      "id": 1698926588657,
+      "fav": false
+    }
+  ]
+}
