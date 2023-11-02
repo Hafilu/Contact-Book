@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Contact Book Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The Contact Book is a web application built using React. It allows users to manage their contacts with features such as adding contacts, validation for contact information, marking contacts as favorites, and deleting saved contacts.
 
-## Available Scripts
+## Features
+- User-friendly interface for managing contact details.
+- Add new contacts with name, phone number and email.
+- Contact validation for name and email and number fields.
+- Mark contacts as favorites.
+- View favorite contacts on a separate page.
+- Delete saved contacts.
+- Data storage using `json-server` for dummy server setup.
 
-In the project directory, you can run:
+### Home Page
+![home](screenshots/1.PNG)
 
-### `npm start`
+### Add Contacts
+![add](screenshots/2.PNG)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Favorites
+![fav](screenshots/3.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
+- Node.js and npm installed
+- `json-server` installed globally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/Hafilu/Contact-Book.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   Navigate to the project directory:
+   cd contact-book
+   
+   Install project dependencies:
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Start the React development server:
+   npm start
+   
+   Start the json-server for dummy server setup (assuming db.json is your data file):
+   json-server --watch db.json --port 3004
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Usage
+ 
+1. Open your web browser and go to `http://localhost:3000` to access the Contact Book.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. To add a new contact:
+   
+   - Enter the contact's name, phone number and email.
+   - Click the "Add Contact" button.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Contacts must have a valid name, phone and email, and those fields will be validated.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. To mark a contact as a favorite:
+   - Click the star button in contact card.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. To view favorite contacts:
+   - Click the "Favorites" tab in the navigation bar.
 
-## Learn More
+7. To delete a contact:
+   - Click the "Delete" button in contact card.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Customization
+ 
+You can customize the appearance and functionality of the Contact Book by modifying the React components and styles in the project. You can add features like categories, notes, or other fields for contacts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Data Storage
+ 
+Contact data is stored in a `db.json` file and managed using `json-server`. You can adjust the data structure and customize the server setup as needed.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to use and modify this project for your private use.
+Enjoy using your Contact Book web application!
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
